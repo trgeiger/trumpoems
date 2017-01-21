@@ -21,4 +21,7 @@ poem_list = []
 for word in range(poem_words):
     poem_list.append(text[randint(0, word_count)])
 
+while poem_list[-1] in ['and', 'an', 'the', 'to', 'but', 'in']:
+    poem_list.pop()
+
 print(" ".join(poem_list))
