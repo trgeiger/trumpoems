@@ -11,11 +11,12 @@ poem_words = int(argv[1])
 
 # open, split, and lowercase the transcript
 text = open("transcript.txt").read().lower().split()
+
 # remove punctuation from edges of each word
 text = [word.strip(string.punctuation) for word in text]
+
 # should be 1450 words
 word_count = len(text)
-
 poem_list = []
 
 # assemble the poem word list
@@ -23,7 +24,7 @@ for word in range(poem_words):
     poem_list.append(text[randint(0, word_count)])
 
 # replace awkward ending words
-while poem_list[-1] in ['and', 'an', 'the', 'to', 'but', 'in', 'their']:
+while poem_list[-1] in ['and', 'an', 'a', 'the', 'to', 'but', 'in', 'their']:
     poem_list.pop()
     poem_list.append(text[randint(0, word_count)])
 
