@@ -1,8 +1,5 @@
 #!/usr/bin/python
 
-from sys import argv
-from random import randint
-import string
 import markovify
 import twittercalls
 

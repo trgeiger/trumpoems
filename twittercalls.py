@@ -1,4 +1,3 @@
-import os
 import configparser
 import tweepy
 
@@ -22,7 +21,7 @@ def grab_tweets(user, count = 5):
     for tweet in tweets:
         tweet_text.append(tweet.text)
 
-    # split every tweet by spaces for word analysis
+    # split every tweet by spaces for word cleanup
     word_list = []
     for tweet in tweet_text:
         word_list.extend(tweet.split())
