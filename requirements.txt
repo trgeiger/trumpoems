@@ -1,0 +1,7 @@
+markovify==0.5.4
+oauthlib==2.0.1
+requests==2.12.5
+requests-oauthlib==0.7.0
+six==1.10.0
+tweepy==3.5.0
+Unidecode==0.4.20
