@@ -3,6 +3,7 @@
 from sys import argv
 from random import randint
 import string
+from grab_tweets import grab_tweets
 
 
 # organize command line arguments
@@ -24,7 +25,7 @@ for word in range(poem_words):
     poem_list.append(text[randint(0, word_count)])
 
 # replace awkward ending words
-while poem_list[-1] in ['and', 'an', 'the', 'to', 'but', 'in', 'their']:
+while poem_list[-1] in ['and', 'an', 'a', 'the', 'to', 'but', 'in', 'their']:
     poem_list.pop()
     poem_list.append(text[randint(0, word_count)])
 
