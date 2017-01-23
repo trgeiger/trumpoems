@@ -11,11 +11,12 @@ poem_words = int(argv[1])
 
 # open, split, and lowercase the transcript
 text = open("transcript.txt").read().lower().split()
+
 # remove punctuation from edges of each word
 text = [word.strip(string.punctuation) for word in text]
+
 # should be 1450 words
 word_count = len(text)
-
 poem_list = []
 
 # assemble the poem word list
