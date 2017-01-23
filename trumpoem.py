@@ -18,10 +18,19 @@ word_count = len(text)
 
 poem_list = []
 
+# assemble the poem word list
 for word in range(poem_words):
     poem_list.append(text[randint(0, word_count)])
 
-while poem_list[-1] in ['and', 'an', 'the', 'to', 'but', 'in']:
+# replace awkward ending words
+while poem_list[-1] in ['and', 'an', 'the', 'to', 'but', 'in', 'their']:
     poem_list.pop()
+    poem_list.append(text[randint(0, word_count)])
+
+# replace sequentially repeated words
+for i in range(poem_words-1):
+    if poem_list[i] == poem_list[i+1]:
+        poem_list[i+1] = text[randint(0, word_count)]
+
 
 print(" ".join(poem_list))
