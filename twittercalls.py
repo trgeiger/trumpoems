@@ -27,7 +27,7 @@ def grab_tweets(user):
             screen_name = user, count = 200, max_id = oldest)
         all_tweets.extend(new_tweets)
         oldest = all_tweets[-1].id - 1
-    
+
     # grab only the text value from the Status objects
     tweet_text = []
     for tweet in all_tweets:
