@@ -5,7 +5,7 @@ import twittercalls
 
 # create Markov text model
 text_model = markovify.Text(
-    " ".join(twittercalls.grab_tweets('realDonaldTrump', 200)))
+    " ".join(twittercalls.grab_tweets('realDonaldTrump')))
 
 # create our new tweet and post it
 tweet = text_model.make_short_sentence(140)
