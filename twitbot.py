@@ -3,7 +3,9 @@
 import markovify
 import twittercalls
 
-# create Markov text model
+# create Markov text model using Comm Manifesto and Trump tweets
+text = open("manifesto.txt").read()
+
 text_model = markovify.Text(
     " ".join(twittercalls.grab_tweets('realDonaldTrump')))
 
