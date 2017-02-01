@@ -8,7 +8,7 @@ There are currently two scripts set up.
 
 This script simply uses the included transcript of the Inauguration to randomly generate a list of words. The results can often be quite poetic, and quite terrifying. Call the script at the command line and provide an integer argument for the desired number of printed words.
 
-There's nothing fancy at work here--this is mostly a proof of concept and will give you straight up random results.
+There's nothing fancy at work here&mdash;this is mostly a proof of concept and will give you straight up random results.
 
 ##Twitbot.py
 
