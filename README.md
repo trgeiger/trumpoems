@@ -1,16 +1,16 @@
-#TrumPoem Generator
+# TrumPoem Generator
 
 The new President of the United States is, in his own words, of the highest, BIGGEST caliber in almost all things. Now, without even knowing it, he's mastered the world of procedurally generated poetry&mdash;in the form of more tweets.
 
 There are currently two scripts set up.
 
-##Inaug.py
+## Inaug.py
 
 This script simply uses the included transcript of the Inauguration to randomly generate a list of words. The results can often be quite poetic, and quite terrifying. Call the script at the command line and provide an integer argument for the desired number of printed words.
 
 There's nothing fancy at work here&mdash;this is mostly a proof of concept and will give you straight up random results.
 
-##Twitbot.py
+## Twitbot.py
 
 To use the bot, you'll need to install the required libraries with pip. Set up and source a virtual environment if you wish, and then:
 ```bash
